@@ -46,17 +46,6 @@ router.get('/', function (req, res, next) {
   res.render('index', { dataBike });
 });
 
-//FONCTIONNE EN DIRECT DANS ROUTE MAIS NON HORS ROUTE (BOUCLE NE SE LANCE PAS)
-// function calcTotal(sessArr) {
-//   let totalCmd = 0;
-//   console.log("sessArr ", sessArr)
-//   for (let i = 0; i < sessArr.length; i++) {
-//     totalCmd = totalCmd + sessArr[i].price * sessArr[i].quantity;
-//     console.log("sess arr price", sessArr[i].price)
-//     console.log("nb ite", i)
-//     return totalCmd
-//   }
-// }
 
 
 //requete GET ajout au panier et affichage page panier
@@ -85,8 +74,6 @@ router.get('/shop', function (req, res, next) {
     totalCmd = totalCmd + req.session.dataCardBike[i].price * req.session.dataCardBike[i].quantity;
   }
   req.session.totalCmd = totalCmd;
-
-
 
   res.render('shop', { dataCardBike: req.session.dataCardBike, totalCmd: req.session.totalCmd });
 });
