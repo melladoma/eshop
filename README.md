@@ -13,7 +13,8 @@ Following cart validation, users are directed through a Stripe payment funnel.
 - Stripe checkout module
 
 
-##Preview
+## Preview
+
 Homepage : products catalog
 
 ![bikeshop_home](https://user-images.githubusercontent.com/99024395/187677010-46170dc4-5cfd-494b-af40-a9fde4b54f6b.jpg)
