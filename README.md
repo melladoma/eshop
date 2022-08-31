@@ -5,9 +5,9 @@ Their cart is kept through navigation thanks to sessions variables mecanism.
 Following cart validation, users are directed through a Stripe payment funnel.
 
 ## Stack:
-Node
-Express
-Javascript
-EJS
-Bootstrap
-Stripe checkout module
+- Node
+- Express
+- Javascript
+- EJS
+- Bootstrap
+- Stripe checkout module
